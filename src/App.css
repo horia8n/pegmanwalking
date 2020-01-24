@@ -1,0 +1,384 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Regular.ttf"); }
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%; }
+
+body {
+  text-align: center;
+  height: 100%; }
+
+.container {
+  text-align: left;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%; }
+
+.app {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%; }
+
+.bikeridepage {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  font-family: Roboto;
+  vertical-align: top; }
+  .bikeridepage .mapswrapper {
+    display: inline-block;
+    width: calc(100% - 400px);
+    height: 100%;
+    position: relative;
+    vertical-align: top; }
+    .bikeridepage .mapswrapper .person {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+      .bikeridepage .mapswrapper .person .wrapper {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative; }
+      .bikeridepage .mapswrapper .person .dash {
+        position: absolute;
+        transform: translateX(-50%);
+        bottom: 0;
+        left: 50%;
+        width: 600px;
+        height: 111px;
+        z-index: 102;
+        color: #ffff00;
+        background-color: rgba(128, 112, 99, 0.7);
+        border: 1px solid #2d2c26;
+        padding-top: 6px;
+        font-size: 30px;
+        text-shadow: 1px 2px #222;
+        font-weight: bolder; }
+        .bikeridepage .mapswrapper .person .dash .HeadingGearsSpeed {
+          display: block;
+          padding-bottom: 3px;
+          width: 100%; }
+          .bikeridepage .mapswrapper .person .dash .HeadingGearsSpeed .HeadingCard {
+            display: inline-block;
+            border-right: 1px solid #222;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+            width: 70px; }
+          .bikeridepage .mapswrapper .person .dash .HeadingGearsSpeed .SuperShiftSpeed {
+            border-right: 1px solid #222;
+            color: #ffff00;
+            display: inline-block;
+            text-align: center;
+            width: 200px; }
+          .bikeridepage .mapswrapper .person .dash .HeadingGearsSpeed .ShiftSpeed {
+            border-right: 1px solid #222;
+            color: #ffff00;
+            display: inline-block;
+            text-align: center;
+            width: 170px; }
+          .bikeridepage .mapswrapper .person .dash .HeadingGearsSpeed .SimKMHSpeed {
+            color: #ffff00;
+            display: inline-block;
+            font-size: 40px;
+            text-align: right;
+            text-shadow: 1px 2px #222;
+            width: 100px; }
+          .bikeridepage .mapswrapper .person .dash .HeadingGearsSpeed .SimKMHSpeedkmh {
+            color: #ffff00;
+            display: inline-block;
+            font-size: 10px !important;
+            font-weight: bold !important;
+            text-shadow: 1px 2px #222; }
+        .bikeridepage .mapswrapper .person .dash .RpmAudioVolume {
+          display: block;
+          width: 100%; }
+          .bikeridepage .mapswrapper .person .dash .RpmAudioVolume .RPM {
+            display: inline-block;
+            width: 459px;
+            margin-left: 20px; }
+          .bikeridepage .mapswrapper .person .dash .RpmAudioVolume .AudioVolume {
+            display: inline-block;
+            font-size: 16px;
+            width: 108px;
+            margin-left: 10px; }
+            .bikeridepage .mapswrapper .person .dash .RpmAudioVolume .AudioVolume label {
+              display: block;
+              width: 108px;
+              margin-bottom: 6px; }
+            .bikeridepage .mapswrapper .person .dash .RpmAudioVolume .AudioVolume input {
+              display: block;
+              width: 99px; }
+      .bikeridepage .mapswrapper .person .settings {
+        position: absolute;
+        bottom: 296px;
+        left: 0;
+        width: 331px;
+        height: 300px;
+        z-index: 105;
+        color: #ffff00;
+        background-color: rgba(128, 112, 99, 0.7);
+        border: 1px solid #2d2c26;
+        padding: 11px 0 8px 8px;
+        text-align: left;
+        font-size: 12px;
+        font-weight: 900;
+        text-shadow: 1px 2px #222; }
+        .bikeridepage .mapswrapper .person .settings .settings_block .setting {
+          display: inline-block;
+          margin-bottom: 17px;
+          width: 150px;
+          margin-right: 10px; }
+          .bikeridepage .mapswrapper .person .settings .settings_block .setting label {
+            display: block;
+            width: 100%;
+            margin-bottom: 2px; }
+          .bikeridepage .mapswrapper .person .settings .settings_block .setting input {
+            display: block;
+            width: 100%; }
+    .bikeridepage .mapswrapper .map {
+      display: block;
+      position: absolute;
+      border: 1px solid #2d2c26; }
+      .bikeridepage .mapswrapper .map.topview {
+        top: 360px;
+        width: 100%;
+        height: calc(100% - 360px);
+        z-index: 101; }
+        .bikeridepage .mapswrapper .map.topview .settings {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 115px;
+          height: 50px;
+          z-index: 105;
+          color: #ffff00;
+          background-color: rgba(128, 112, 99, 0.7);
+          border: 1px solid #2d2c26;
+          padding: 8px;
+          text-align: left;
+          font-size: 12px;
+          font-weight: 900; }
+          .bikeridepage .mapswrapper .map.topview .settings .settings_block {
+            margin-bottom: 12px; }
+            .bikeridepage .mapswrapper .map.topview .settings .settings_block .setting {
+              display: block;
+              margin-bottom: 6px;
+              width: 100%; }
+              .bikeridepage .mapswrapper .map.topview .settings .settings_block .setting label {
+                display: block;
+                width: 100%;
+                margin-bottom: 2px; }
+              .bikeridepage .mapswrapper .map.topview .settings .settings_block .setting input {
+                display: block;
+                width: 100%; }
+      .bikeridepage .mapswrapper .map.streetview {
+        top: 0;
+        width: 50%;
+        height: 360px;
+        z-index: 102; }
+        .bikeridepage .mapswrapper .map.streetview.camBlue {
+          border: 6px solid #0a8dff; }
+        .bikeridepage .mapswrapper .map.streetview.camRed {
+          right: 0;
+          border: 6px solid #ff4646; }
+        .bikeridepage .mapswrapper .map.streetview .settings {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 115px;
+          height: 50px;
+          z-index: 105;
+          color: #ffff00;
+          background-color: rgba(128, 112, 99, 0.7);
+          border: 1px solid #2d2c26;
+          padding: 8px;
+          text-align: left;
+          font-size: 12px;
+          font-weight: 900; }
+          .bikeridepage .mapswrapper .map.streetview .settings .settings_block {
+            margin-bottom: 12px; }
+            .bikeridepage .mapswrapper .map.streetview .settings .settings_block .setting {
+              display: block;
+              margin-bottom: 6px;
+              width: 100%; }
+              .bikeridepage .mapswrapper .map.streetview .settings .settings_block .setting label {
+                display: block;
+                width: 100%;
+                margin-bottom: 2px; }
+              .bikeridepage .mapswrapper .map.streetview .settings .settings_block .setting input {
+                display: block;
+                width: 100%; }
+      .bikeridepage .mapswrapper .map .map_wrapper {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        .bikeridepage .mapswrapper .map .map_wrapper .googleMap {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 102; }
+        .bikeridepage .mapswrapper .map .map_wrapper .keysInstructions {
+          display: block;
+          position: absolute;
+          width: 200px;
+          height: 290px;
+          top: 0;
+          left: 0;
+          z-index: 103;
+          color: #fff;
+          border: 1px solid #000;
+          background-color: rgba(128, 112, 99, 0.7); }
+          .bikeridepage .mapswrapper .map .map_wrapper .keysInstructions .inner {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 100%; }
+            .bikeridepage .mapswrapper .map .map_wrapper .keysInstructions .inner .middle {
+              display: block;
+              position: absolute;
+              width: 150px;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-weight: 900;
+              font-size: 18px;
+              text-shadow: 0 0 10px #000; }
+              .bikeridepage .mapswrapper .map .map_wrapper .keysInstructions .inner .middle .but {
+                display: inline-block;
+                border: 2px solid #fff;
+                border-radius: 5px;
+                width: 30px;
+                height: 30px;
+                margin-bottom: 10px;
+                margin-right: 30px;
+                padding: 3px 0 0px 0;
+                text-align: center;
+                box-shadow: 0 0 10px 0 #000; }
+              .bikeridepage .mapswrapper .map .map_wrapper .keysInstructions .inner .middle .text {
+                font-weight: 900; }
+        .bikeridepage .mapswrapper .map .map_wrapper .black_screen {
+          display: none;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 103;
+          background-color: #000;
+          animation: fadeOut ease-in 3s forwards; }
+        .bikeridepage .mapswrapper .map .map_wrapper .no_touch {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 104; }
+    .bikeridepage .mapswrapper .showcase {
+      display: block;
+      position: absolute;
+      border: 1px solid #2d2c26;
+      background-color: rgba(128, 112, 99, 0.7);
+      text-shadow: 1px 2px #222; }
+      .bikeridepage .mapswrapper .showcase.showcase0 {
+        width: 221px;
+        height: 221px;
+        z-index: 103;
+        bottom: 76px;
+        left: 0; }
+      .bikeridepage .mapswrapper .showcase.showcase1 {
+        width: 111px;
+        height: 111px;
+        z-index: 104;
+        bottom: 186px;
+        left: 220px; }
+      .bikeridepage .mapswrapper .showcase.showcase2 {
+        width: 111px;
+        height: 111px;
+        z-index: 104;
+        bottom: 76px;
+        left: 220px; }
+      .bikeridepage .mapswrapper .showcase .showcase_wrapper {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        .bikeridepage .mapswrapper .showcase .showcase_wrapper .showcase_component {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: #ffff00;
+          font-size: 10px;
+          padding: 0 8px; }
+          .bikeridepage .mapswrapper .showcase .showcase_wrapper .showcase_component.showcase_img {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            padding: 0; }
+          .bikeridepage .mapswrapper .showcase .showcase_wrapper .showcase_component.showcase_angle {
+            top: 2px;
+            left: 0; }
+          .bikeridepage .mapswrapper .showcase .showcase_wrapper .showcase_component.showcase_step {
+            top: 14px;
+            left: 0; }
+    .bikeridepage .mapswrapper .showcasepattern {
+      display: block;
+      position: absolute;
+      border: 1px solid #2d2c26;
+      background-color: rgba(128, 112, 99, 0.7);
+      width: 331px;
+      height: 76px;
+      z-index: 104;
+      bottom: 1px;
+      left: 0; }
+      .bikeridepage .mapswrapper .showcasepattern .title {
+        color: #ffff00;
+        font-size: 10px;
+        padding: 3px 8px 0;
+        text-shadow: 1px 2px #222; }
+      .bikeridepage .mapswrapper .showcasepattern .showcase_wrapper {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 60px; }
+        .bikeridepage .mapswrapper .showcasepattern .showcase_wrapper img {
+          display: inline-block;
+          width: 60px;
+          margin-right: -13px;
+          margin-left: -7px;
+          margin-bottom: -7px;
+          height: auto; }
+  .bikeridepage .SidePanel {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 400px;
+    height: 100%;
+    overflow: auto;
+    border: #000;
+    font-size: 12px;
+    vertical-align: top; }
+    .bikeridepage .SidePanel .title {
+      font-size: 14px;
+      font-weight: 900;
+      margin-bottom: 3px; }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+/*# sourceMappingURL=App.css.map */
